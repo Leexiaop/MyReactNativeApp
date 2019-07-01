@@ -5,7 +5,7 @@ This is a React-Native Project!
 
 ### 1 react-navigation
     yarn add react-navigation 或者 npm install --save react-navigation
-## 2 react-native-gesture-handler
+### 2 react-native-gesture-handler
     yarn add react-native-gesture-handler 或者 npm install --save react-native-gesture-handler
 ### 3 link所有原生依赖
     react-native link react-native-gesture-handler
