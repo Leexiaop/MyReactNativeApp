@@ -1,9 +1,7 @@
 # MyReactNativeApp
 This is a React-Native Project!
 
-#首先需要配置的是导航 
-
-##所以首选需要安装 
+# 首先需要配置的是导航
 
 ### 1 react-navigation
     yarn add react-navigation 或者 npm install --save react-navigation
@@ -11,7 +9,7 @@ This is a React-Native Project!
     yarn add react-native-gesture-handler 或者 npm install --save react-native-gesture-handler
 ### 3 link所有原生依赖
     react-native link react-native-gesture-handler
-    
+
     到此为止，IOS开发不需要再做其他额外的操作，但是在android开发还需要在MainActivity.java以下配置：
 
         package com.reactnavigation.example;
