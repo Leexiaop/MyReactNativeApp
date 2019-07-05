@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { StyleSheet, Image } from 'react-native'
 class ShareButton extends Component {
     constructor(props) {
         super(props)
     }
     render() {
-        console.log(this.props)
         return(
-            <View style={styles.text}>
-                <Text>分享</Text>
-            </View>
+            <Image source={require('../images/share-outline.png')} style={Style.img}></Image>
         )
     }
 }
-const styles = StyleSheet.create({
-    text: {
-        paddingLeft: 16,
-        paddingRight: 16
+const Style = StyleSheet.create({
+    img: {
+        width: 32,
+        height: 32
     }
 })
-export default ShareButton;
+export default ShareButton

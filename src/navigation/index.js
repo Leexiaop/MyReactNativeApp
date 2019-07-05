@@ -8,69 +8,73 @@ import Order from '../pages/Order'
 import Search from '../pages/Search'
 import BackButton from '../components/BackButton'
 import ShareButton from '../components/ShareButton'
+import Details from '../pages/Details'
 const SearchStackNavigator = createStackNavigator({
   Search: {
     screen: Search,
-    navigationOptions: (navigation) => {
-      return {
-        title: 'Search',
-        headerTintColor: 'red',
-        headerRight: <ShareButton />,
-        headerLeft: <BackButton navigation = { navigation } />
-      }
-    }
+    // navigationOptions: (navigation) => {
+    //   return {
+    //     title: 'Search',
+    //     headerTintColor: 'red',
+    //     headerRight: <ShareButton />,
+    //     headerLeft: <BackButton navigation = { navigation } />
+    //   }
+    // }
+  },
+  Details: {
+    screen: Details
   }
 })
 const StoryStackNavigator = createStackNavigator({
   Story: {
     screen: Story,
-    navigationOptions: (navigation) => {
-      return {
-        title: 'Story',
-        headerTintColor: 'red',
-        headerRight: <ShareButton />,
-        headerLeft: <BackButton navigation = { navigation } />
-      }
-    }
+    // navigationOptions: (navigation) => {
+    //   return {
+    //     title: 'Story',
+    //     headerTintColor: 'red',
+    //     headerRight: <ShareButton />,
+    //     headerLeft: <BackButton navigation = { navigation } />
+    //   }
+    // }
   }
 })
 const MeStackNavigator = createStackNavigator({
   Me: {
     screen: Me,
-    navigationOptions: (navigation) => {
-      return {
-        title: 'Me',
-        headerTintColor: 'red',
-        headerRight: <ShareButton />,
-        headerLeft: <BackButton navigation = { navigation } />
-      }
-    }
+    // navigationOptions: (navigation) => {
+    //   return {
+    //     title: 'Me',
+    //     headerTintColor: 'red',
+    //     headerRight: <ShareButton />,
+    //     headerLeft: <BackButton navigation = { navigation } />
+    //   }
+    // }
   }
 })
 const MessageStackNavigator = createStackNavigator({
   Message: {
     screen: Message,
-    navigationOptions: (navigation) => {
-      return {
-        title: 'Message',
-        headerTintColor: 'red',
-        headerRight: <ShareButton />,
-        headerLeft: <BackButton navigation = { navigation } />
-      }
-    }
+    // navigationOptions: (navigation) => {
+    //   return {
+    //     title: 'Message',
+    //     headerTintColor: 'red',
+    //     headerRight: <ShareButton />,
+    //     headerLeft: <BackButton navigation = { navigation } />
+    //   }
+    // }
   }
 })
 const OrderStackNavigator = createStackNavigator({
   Order: {
     screen: Order,
-    navigationOptions: (navigation) => {
-      return {
-        title: 'Order',
-        headerTintColor: 'red',
-        headerRight: <ShareButton />,
-        headerLeft: <BackButton navigation = { navigation } />
-      }
-    }
+    // navigationOptions: (navigation) => {
+    //   return {
+    //     // title: 'Order',
+    //     headerTintColor: 'red',
+    //     headerRight: <ShareButton />,
+    //     headerLeft: <BackButton navigation = { navigation } />
+    //   }
+    // }
   }
 })
 export default createAppContainer(createBottomTabNavigator(
@@ -93,9 +97,6 @@ export default createAppContainer(createBottomTabNavigator(
   },
   {
     /* Other configuration remains unchanged */
-    initialRouteName: 'Search',
-    tabBarOptions: {
-      scrollEnabled: true
-    }
+    initialRouteName: 'Search'
   }
 ));

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text } from 'react-native'
-export default class Message extends Component {
+class Message extends Component {
     // constructor() {
     //     super()
     // }
@@ -10,3 +10,4 @@ export default class Message extends Component {
         )
     }
 }
+export default Message
