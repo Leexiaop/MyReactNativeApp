@@ -36,3 +36,5 @@ This is a React-Native Project!
             }
         }
 https://reactnavigation.org/docs/zh-Hans/getting-started.html
+export default createAppContainer(createBottomTabNavigator(
+# 搭建一个新的项目，首先要做的一定是路由的配置，所有关于react-navigation的配置，我目前用到了createStackNavigator，createBottomTabNavigator的简单结合，实现了createStackNavigato的头部导航，createBottomTabNavigator底部导航，以及二者相结合自路由Detail的底部导航隐藏

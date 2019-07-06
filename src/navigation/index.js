@@ -22,9 +22,21 @@ const SearchStackNavigator = createStackNavigator({
     // }
   },
   Details: {
-    screen: Details
+    screen: Details,
+    navigationOptions: (navigation) => {
+      return {
+        title: '详情',
+      }
+    }
   }
 })
+SearchStackNavigator.navigationOptions = ({navigation}) => {
+  if (navigation.state.routes.length > 1) {
+    return {
+      tabBarVisible: false
+    }
+  }
+}
 const StoryStackNavigator = createStackNavigator({
   Story: {
     screen: Story,
