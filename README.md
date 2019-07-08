@@ -39,3 +39,8 @@ https://reactnavigation.org/docs/zh-Hans/getting-started.html
 export default createAppContainer(createBottomTabNavigator(
 # createStackNavigator，createBottomTabNavigator
 搭建一个新的项目，首先要做的一定是路由的配置，所有关于react-navigation的配置，我目前用到了createStackNavigator，createBottomTabNavigator的简单结合，实现了createStackNavigato的头部导航，createBottomTabNavigator底部导航，以及二者相结合自路由Detail的底部导航隐藏
+# Ant Design Mobile RN of React
+    关于ui组件，我选择的是antd，使用的步骤也很简单
+    1. npm install @ant-design/react-native --save 或者 yarn add @ant-design/react-native
+    2. react-native link @ant-design/icons-react-native
+    3. 在组件中直接引入 import { Button } from '@ant-design/react-native'
