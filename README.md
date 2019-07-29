@@ -48,4 +48,8 @@ export default createAppContainer(createBottomTabNavigator(
     3. 在组件中直接引入 import { Button } from '@ant-design/react-native'
 # MobX的使用
     曾经Redux才是React或者React-Native的最佳伴侣，但是在MobX出现之后，一切都改变了，所以这次玩转React-Native，状态管理机，我毅然决然的选择了MobX(https://cn.mobx.js.org/)
-## MobX和Redux的区别
+# MobX和Redux
+## MobX的使用
+    安装：
+    npm install mobx --save 或者yarn add mobx
+    npm install mobx-react --save或者 yarn add mobx-react
