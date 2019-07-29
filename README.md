@@ -1,5 +1,7 @@
 # MyReactNativeApp
 This is a React-Native Project!
+# 项目的安装
+    项目的安装不再多说，直接去官网查看步骤即可：ios启动 react-native run-ios ; 安卓启动 react-native run-android
 
 # 首先需要配置的是导航
 
@@ -44,3 +46,6 @@ export default createAppContainer(createBottomTabNavigator(
     1. npm install @ant-design/react-native --save 或者 yarn add @ant-design/react-native
     2. react-native link @ant-design/icons-react-native
     3. 在组件中直接引入 import { Button } from '@ant-design/react-native'
+# MobX的使用
+    曾经Redux才是React或者React-Native的最佳伴侣，但是在MobX出现之后，一切都改变了，所以这次玩转React-Native，状态管理机，我毅然决然的选择了MobX(https://cn.mobx.js.org/)
+## MobX和Redux的区别
