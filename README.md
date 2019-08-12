@@ -53,3 +53,12 @@ export default createAppContainer(createBottomTabNavigator(
     安装：
     npm install mobx --save 或者yarn add mobx
     npm install mobx-react --save或者 yarn add mobx-react
+    Mobx中最重要的三点是：observeble, observe, action,如果你用的不是typescript，那么装饰器就不好使用了，就会报错，那么此时需要安装俩个插件：
+    npm install babel-plugin-transform-decorators-legacy  --save-dev
+    npm install  @babel/plugin-proposal-decorators --save-dev
+    并且在babel.config.js中配置
+     "plugins": [
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      ["@babel/plugin-proposal-class-properties", { "loose" : true }]
+    ]
+    这样就可以完美解决了。

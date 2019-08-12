@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 // import {Platform, StyleSheet, Text, View} from 'react-native';
 import AppContainer from './src/navigation/index'
-import { observer, Provider } from 'mobx-react'
+import { Provider } from 'mobx-react'
 import store from './src/mobx/store/index'
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,11 +19,11 @@ import store from './src/mobx/store/index'
 // });
 // type Props = {}
 // export default class App extends Component <Props> {
-@observer()
+// @observer()
 export default class App extends Component {
   render() {
     return (
-        <Provider Store={store}>
+        <Provider store={store}>
             <AppContainer />
         </Provider>
       // <View style={styles.container}>
