@@ -1,19 +1,7 @@
-import { observable, action, computed } from 'mobx'
-class Store {
-    /**
-     * state
-     */
-    @observable() list = []
+import home from './home.store'
 
-    /**
-     * actions
-     */
-    @action getData = (elemet) => {
-
-    }
-
-    constructor () {
-        this.list = []
-    }
+const stores = {
+    home
 }
-export default new Store()
+
+export default stores

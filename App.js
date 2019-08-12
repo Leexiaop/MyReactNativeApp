@@ -10,7 +10,7 @@ import React, {Component} from 'react';
 // import {Platform, StyleSheet, Text, View} from 'react-native';
 import AppContainer from './src/navigation/index'
 import { Provider } from 'mobx-react'
-import store from './src/mobx/store/index'
+import stores from './src/mobx/store/index'
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
 //   android:
@@ -23,7 +23,7 @@ import store from './src/mobx/store/index'
 export default class App extends Component {
   render() {
     return (
-        <Provider store={store}>
+        <Provider {...stores}>
             <AppContainer />
         </Provider>
       // <View style={styles.container}>
